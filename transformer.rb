@@ -92,7 +92,7 @@ meta_match.with_index { |meta, idx|
     tmpHash[idx]['image'] = ''
 
     # gen description meta
-    tmpHash[idx]['description'] = tmpHash['title']
+    tmpHash[idx]['description'] = tmpHash[idx]['title']
 
     # gen draft meta
     tmpDraft = /(?<=STATUS:\s).+/u.match(meta).to_s
