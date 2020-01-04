@@ -4,7 +4,15 @@
 
 - Convert `.mt` file of xuite blog to be compatible with HUGO static site generator format `.md` (markdown) through command line
 
-&nbsp;
+---
+
+#### Install
+
+```sh
+gem install xuite_blog_to_hugo_gem
+```
+
+---
 
 #### Usage
 
@@ -12,7 +20,7 @@
 xuite_blog_to_hugo YOUR_XUITE_MT_FILENAME_WITH_FILEPATH
 ```
 
-&nbsp;
+---
 
 #### Notice
 
@@ -22,7 +30,7 @@ xuite_blog_to_hugo YOUR_XUITE_MT_FILENAME_WITH_FILEPATH
 4. Generate `.md` file name(s) starting from `0`
 5. Automatically create folder `output` in current execution directory if `output` folder doesn't exist
 
-&nbsp;
+---
 
 #### Convertion
 
