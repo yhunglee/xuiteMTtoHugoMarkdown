@@ -8,11 +8,22 @@ require 'date'
 require 'yaml'
 
 # load input file
-# Notice: need to save input file as LF as line separator. If it is CRLF, convert it to LF.
 input_file = File.open('./input/xuite_blog_export_2008876.txt_', "r")
 #input_file = File.open('./input/sample-input.txt_', "r")
 raw_content = input_file.read
 input_file.close
+
+
+# Notice: need to save input file as LF as line separator. If it is CRLF, convert it to LF.
+if (raw_content.match?(/\r\n/u)) 
+  raw_content.gsub!(/\r\n/u, "\n")
+end
+
+if (raw_content.match?(/\r/u))
+# replace \r with \n
+  raw_content.gsub!(/\r/u, "\n")
+end
+
 
 # need append file first 8 bytes with "-" character
 raw_content.prepend("--------\n")
