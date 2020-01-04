@@ -2,16 +2,25 @@
 
 #### Purpose
 
-- Convert `.mt` file of xuite blog to be compatible with HUGO static site generator format `.md` (markdown)
+- Convert `.mt` file of xuite blog to be compatible with HUGO static site generator format `.md` (markdown) through command line
+
+&nbsp;
+
+#### Usage
+
+```sh
+xuite_blog_to_hugo YOUR_XUITE_MT_FILENAME_WITH_FILEPATH
+```
 
 &nbsp;
 
 #### Notice
 
-1. Cannot convert tag of xuite blog
-2. Cannot 100% convert `html` to `markdown-compatible` format
-3. Generate `.md` file name(s) starting from `0`
-4. Auto create folder `output` in current execution directory if `output` folder doesn't exist
+1. **ONLY EXECUTE CONVERTION THROUGH COMMAND LINE**
+2. Cannot convert tag of xuite blog
+3. Cannot 100% convert `html` to `markdown-compatible` format
+4. Generate `.md` file name(s) starting from `0`
+5. Automatically create folder `output` in current execution directory if `output` folder doesn't exist
 
 &nbsp;
 
