@@ -65,7 +65,7 @@ module XuiteBlogToHugoGem
 
 
   # mapping meta to hugo post
-  =begin
+=begin
   xuite article ------- hugo post
     meta :              : meta
     TITLE:              : title
@@ -93,7 +93,7 @@ module XuiteBlogToHugoGem
                         : highlight
                             true/false
 
-  =end
+=end
 
   tmpHash = Hash.new
 
@@ -133,13 +133,13 @@ module XuiteBlogToHugoGem
 
   }
 
-  =begin
+=begin
       body transformation
 
       xuite article ------- hugo post
       BODY:                : --- and two newlines
 
-  =end
+=end
 
   # tranform body to markdown content
   # use reverse_markdown gem
@@ -155,7 +155,7 @@ module XuiteBlogToHugoGem
     begin
       Dir.mkdir("./output")
     rescue SystemCallError
-      $stderr "Cannot create output folder, please checkout permission"
+      $stderr.puts "Cannot create output folder, please checkout permission"
       exit
     end
   end
@@ -169,5 +169,7 @@ module XuiteBlogToHugoGem
           f.puts("---", "", "", tmpContent[index])
       }
   }
+
+  puts "Convert complete"
 
 end
