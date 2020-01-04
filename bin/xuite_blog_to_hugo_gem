@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+require 'xuite_blog_to_hugo_gem'
+
+XuiteBlogToHugoGem
